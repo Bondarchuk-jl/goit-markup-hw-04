@@ -4,6 +4,7 @@
     --gray-color: #434455;
    --btn-navigation:#404BBF;
    --main-color: #FFFFFF;
+   --lightgray-color: #F4F4FD;
 }
 body{
     color: var(--main-color) ;
@@ -122,7 +123,7 @@ ul {
 /*.hero {}*/
 
 .hero-main{ 
-    background: #2E2F42;
+    background: var(--maintext-color);
     text-align: center;
     padding-top:188px  ;
     padding-bottom: 188px; 
@@ -156,7 +157,7 @@ ul {
     align-items: center;
     justify-content: center;
 
-    background-color: #4D5AE5;
+    background-color: var(--violet-color);
     border-radius: 4px;
     border-color: transparent;
     cursor: pointer;   
@@ -164,7 +165,7 @@ ul {
 
 .hero-buttom:hover,
 .hero-buttom:focus {
-    background-color: #404BBF;
+    background-color: var(--btn-navigation);
 }
 
 /* Section tefnology*/
@@ -238,7 +239,7 @@ ul {
 /*section our team - about*/
 
 .about {
-    background: #F4F4FD;
+    background: var(--lightgray-color);
     padding-bottom: 120px;
 }
 
@@ -270,7 +271,7 @@ ul {
 /* Footer */
 
 .footer {
-    background: #2E2F42;
+    background: var(--maintext-color);
     padding-top: 100px; 
     padding-bottom: 100px;
 }
@@ -286,7 +287,7 @@ ul {
 }
 
 .logo-footer-second {
-    color: #F4F4FD;
+    color: var(--lightgray-color);
 }
 
 .footer-paragraph {
@@ -325,7 +326,7 @@ ul {
 .portfolio-buttom {
     display: flex;
     font-weight: 500;
-    background-color: #F4F4FD;
+    background-color: var(--lightgray-color);
     align-items: center; 
     letter-spacing: 0.04em;
     color: var(--violet-color);
@@ -412,3 +413,80 @@ ul {
     padding-bottom: 32px ;
     padding-top: 32px; 
  }
+
+ /* Fon */
+
+ .overlay{
+    max-width: 1600px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+    background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) , url(../images/people-office.jpg);
+    background-color: var(--maintext-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+
+ }
+/* в єлементе до  контента. афтер после контенка*/
+ .buttom::before {
+    display: flex;
+    content: '';
+    width: ;
+    height: ;
+    background-color: ;
+    background-size: contain;
+    margin-right: 10px;
+    cursor: pointer;
+ }
+ 
+ .tehnology-item::before {
+    margin-bottom: 8px;
+    display: block;
+    content: '';
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-stategy::before {
+    background-image: url(../images/antenna.svg);
+}
+.icon-punctuality::before {
+    background-image: url(../images/clock.svg);
+}
+.icon-diligence::before {
+    background-image: url(../images/diagram.svg);
+}
+ .icon-tech::before {
+    background-image: url(../images/astronaut.svg);
+ }
+  /*or*/
+  /* чтоб поставить на каждую лишку
+   свою картинку, можно использовать
+   классы для каждой или через чайлд
+  .tehnology-item:nth-child(2)::before {
+  }
+  */
+  
+  .linkul {
+    display: inline-block;
+    height:40px  ;
+    width: 40px;
+    background-image: url();
+    background-color:#4D5AE5 ;
+    background-size: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .linkul:hover {
+    background-color: #404BBF;
+  }
