@@ -552,15 +552,23 @@ ul {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-    
+    color: aqua;
  }
- .customers-icon {
+ /*.customers-icon {
     fill: #AFB1B8;
  }
  .customers-link:hover,
  .customers-link:focus {
     border-color:#404BBF;
+    fill: #2E2F42;
  }
  .customers-link:hover .customers-icon {
     fill: #404BBF;
- }
+ }*/
+.customers-icon {
+    fill:currentColor;
+}
+.customers-link:hover {
+    border-color: #404BBF;
+    color: #4D5AE5;
+}
