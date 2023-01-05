@@ -5,6 +5,8 @@
    --btn-navigation:#404BBF;
    --main-color: #FFFFFF;
    --lightgray-color: #F4F4FD;
+
+   --linear-gradient: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 body{
     color: var(--main-color) ;
@@ -266,6 +268,7 @@ ul {
 .about-paragraph, .footer-paragraph {
     font-weight: 400;
     color: var(--gray-color);
+    margin-bottom: 8px;
 }
 
 /* Footer */
@@ -418,11 +421,11 @@ ul {
 
  .overlay{
     max-width: 1600px;
-    
     margin-right: auto;
     margin-left: auto;
     
-    background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) , url(../images/people-office.jpg);
+    background-image:var(--linear-gradient),
+     url(../images/people-office.jpg);
     background-color: var(--maintext-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -490,3 +493,74 @@ ul {
   .linkul:hover {
     background-color: #404BBF;
   }
+
+  .teamsoc-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .teamsoc-item {
+    height: 40px;
+    width: 40px;
+  }
+  /*.teamsoc-item:last-child {
+    margin-right: 0;*/
+  
+  .teamsoc-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teamsoc-icon {
+    fill: var(--lightgray-color);
+    
+  }
+
+  .teamsoc-link:hover,
+  .teamsoc-link:focus {
+    background: #404BBF;
+  }
+ .customers {
+    padding-bottom: 120px;
+ }
+
+ .customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    
+ }
+.cust{
+    padding-top: 130px;
+}
+ .customers-item {
+    width: 168px;
+    height: 88px;
+ }
+ .customers-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .customers-icon {
+    fill: #AFB1B8;
+ }
+ .customers-link:hover,
+ .customers-link:focus {
+    border-color:#404BBF;
+ }
+ .customers-link:hover .customers-icon {
+    fill: #404BBF;
+ }
