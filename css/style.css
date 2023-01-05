@@ -420,7 +420,7 @@ ul {
  /* Fon */
 
  .overlay{
-    max-width: 1600px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
     
@@ -552,11 +552,11 @@ ul {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-    color: aqua;
+    color: #8E8F99;
  }
  /*.customers-icon {
-    fill: #AFB1B8;
- }
+    fill: #AFB1B8;}
+ 
  .customers-link:hover,
  .customers-link:focus {
     border-color:#404BBF;
@@ -570,5 +570,5 @@ ul {
 }
 .customers-link:hover {
     border-color: #404BBF;
-    color: #4D5AE5;
+    color: #404BBF;
 }
